@@ -1,0 +1,33 @@
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .section {
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+  }
+  
+  .section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .section h2 {
+    margin-top: 10px;
+  }
+  
+  .section:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+ 
+}
+
+.blogcard {
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid black;
+
+  margin: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogcard:hover{
+box-shadow:0 14px 2px pink;
+}
+
+.productsimgs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2px 15px;
+}
+
+.product-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+.product-img:hover {
+  transform: scale(1.1);}
+
+.pre-content {
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.date {
+  font-size: 22px;
+  margin: 5px 0;
+  font-weight: 45px;
+}
+
+.technologies {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.technology {
+  background: whitesmoke;
+  color: black;
+  margin: 7px 3px;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.techcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.offer{
+  color:red;
+}

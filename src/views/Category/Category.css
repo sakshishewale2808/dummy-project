@@ -1,0 +1,23 @@
+.category {
+    text-align: center;
+    padding: 20px;
+    height:200px;
+
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .product-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .product-img:hover {
+    transform: scale(1.1);}
+  
+  
