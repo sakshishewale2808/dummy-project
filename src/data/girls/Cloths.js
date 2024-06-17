@@ -12,7 +12,7 @@ const girlsClothesData = [
     {
       id: 18,
       content: 'Cute dress from us only for Girls',
-      productsimgs: 'https://cdn.fcglcdn.com/brainbees/images/products/300x364/17179910a.webp',
+      productsimgs: 'https://cdn.fcglcdn.com/brainbees/images/products/300x364/16657783a.webp',
       date: '₹300',
       Price: '₹450',
       Offer: '(40% off)',

@@ -4,45 +4,49 @@
     align-items: center;
     height: 100vh;
     padding: 20px;
-    background-color: #cb41d0;
-background-image: linear-gradient(74deg, #cb41d0 0%, #ff08ed 30%, #ff70eb 66%, #ffffff 100%);
-
+background-color: #f8f8f8;
 }
 
 .parent {
     display: flex;
-    width: 80%;
-    height: 80vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
 }
 
 .child1 {
-    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
 .fullavatar {
-    width: 100%;
-    height: auto;
-    max-height: 100%;
+    max-width: 400px;
+    max-height: 400px;
     object-fit: cover;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
 }
 
 .child2 {
-    flex: 1; /* Take the remaining space */
-    padding: 20px;
-    overflow-y: auto; /* Scrollable content */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    font-size: 18px;
 }
 
 .child2 h1, .child2 h2 {
-    margin-top: 0;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .child2 p, .child2 ul {
@@ -51,6 +55,8 @@ background-image: linear-gradient(74deg, #cb41d0 0%, #ff08ed 30%, #ff70eb 66%, #
 
 .pricecontainer {
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .date {
@@ -64,7 +70,6 @@ background-image: linear-gradient(74deg, #cb41d0 0%, #ff08ed 30%, #ff70eb 66%, #
     animation: zoomInOut 1.5s infinite alternate;
 }
 
-/* Keyframes for zooming the text */
 @keyframes zoomInOut {
     from {
         transform: scale(1);
@@ -74,8 +79,57 @@ background-image: linear-gradient(74deg, #cb41d0 0%, #ff08ed 30%, #ff70eb 66%, #
     }
 }
 
-/* Optional: Hover effect for additional interaction */
 .offer:hover {
     transform: scale(1.2);
     transition: transform 0.5s ease;
+}
+
+/* Media query for tablets */
+@media (max-width: 900px) {
+    .parent {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .child1 {
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .child2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .fullavatar {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .fullview {
+        padding: 10px;
+    }
+
+    .parent {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .child1 {
+        padding: 5px;
+    }
+
+    .child2 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .fullavatar {
+        max-width: 200px;
+        max-height: 200px;
+    }
 }

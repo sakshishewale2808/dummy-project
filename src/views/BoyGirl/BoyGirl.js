@@ -4,10 +4,10 @@ import './BoyGirl.css';
 function BoyGirl() {
   return (
     <div className="home">
-      <h1>Welcome to Our Babies Corner</h1>
+      <h1>Welcome to Our Babies Corner👦👧</h1>
       <div className="sections">
         <Link to="/category/boys" className="section">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYI3mAkEsaffMMhyTeqbnfisArhSYZOXWE6A&s" alt="Boys Section" />
+          <img src="https://e0.pxfuel.com/wallpapers/718/906/desktop-wallpaper-stylish-little-boy-pic-gallery-stylish-small-boy.jpg" alt="Boys Section" />
           <h2>Boys</h2>
         </Link>
         <Link to="/category/girls" className="section">

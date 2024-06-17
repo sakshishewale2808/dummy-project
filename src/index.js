@@ -9,20 +9,20 @@ import ProductView from './views/ProductView/ProductView';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <BoyGirl />
+    element: <BoyGirl />,
   },
   {
     path: "/category/:gender",
-    element: <Category />
+    element: <Category />,
   },
   {
     path: "/category/:gender/:category",
-    element: <BlogProductCard />
+    element: <BlogProductCard />,
   },
   {
     path: "/product/:id",
-    element: <ProductView />
-  }
+    element: <ProductView />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
