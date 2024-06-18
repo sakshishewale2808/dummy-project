@@ -1,7 +1,7 @@
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
 
-function MyProducts({ id, content, productsimgs, date, Price, Offer, Technology ,category}) {
+function MyProducts({ id, content, productsimgs, date, Price, Offer, Technology }) {
   return (
     <Link className="blogcard" to={`/product/${id}`}>
       <div className="container">

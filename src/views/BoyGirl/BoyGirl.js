@@ -19,5 +19,9 @@ function BoyGirl() {
   );
 }
 
-
 export default BoyGirl;
+//https://m.media-amazon.com/images/I/71QkkqTfCQL._AC_UF1000,1000_QL80_.jpg(two cute baby boys)
+//baby girl with frock : https://cdn.fcglcdn.com/brainbees/images/products/438x531/16111577a.webp
+//https://cdn.fcglcdn.com/brainbees/images/products/300x364/14368654a.webp
+//https://cdn.fcglcdn.com/brainbees/images/products/300x364/13083449a.webp
+//https://cdn.fcglcdn.com/brainbees/images/products/300x364/14365114a.webp

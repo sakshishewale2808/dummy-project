@@ -1,10 +1,20 @@
-.fullview {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+BR:wght@100..400&family=Shadows+Into+Light&display=swap');
+
+body{ 
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+}.fullview {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 20px;
-background-color: #f8f8f8;
+    background-color: #f8f8f8;
 }
 
 .parent {
@@ -44,7 +54,7 @@ background-color: #f8f8f8;
     font-size: 18px;
 }
 
-.child2 h1, .child2 h2 {
+.child2 h1, .child2 h2, .child2 h3 {
     margin: 0;
     margin-bottom: 10px;
 }
@@ -68,6 +78,24 @@ background-color: #f8f8f8;
     color: red;
     display: inline-block;
     animation: zoomInOut 1.5s infinite alternate;
+}
+
+.btn {
+    width: 80%;
+    border-radius: 20px;
+    background-color: #ffb3ff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
 }
 
 @keyframes zoomInOut {
@@ -106,6 +134,11 @@ background-color: #f8f8f8;
         max-width: 300px;
         max-height: 300px;
     }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+    }
 }
 
 /* Media query for mobile devices */
@@ -131,5 +164,10 @@ background-color: #f8f8f8;
     .fullavatar {
         max-width: 200px;
         max-height: 200px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 14px;
     }
 }

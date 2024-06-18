@@ -1,6 +1,6 @@
 const boysRaincoatData = [
     {
-      id: 1,
+      id: 11,
       content: 'Waterproof Raincoat for Boys',
       productsimgs: 'https://cdn.fcglcdn.com/brainbees/images/products/300x364/13347042a.webp',
       date:'₹450',
@@ -10,7 +10,7 @@ const boysRaincoatData = [
       category: 'raincoat'
     },
     {
-      id: 2,
+      id: 12,
       content: 'Reflective Raincoat for Boys',
       productsimgs: 'https://cdn.fcglcdn.com/brainbees/images/products/300x364/13347051b.jpg',
       date:'₹450',
@@ -20,7 +20,7 @@ const boysRaincoatData = [
       category: 'raincoat'
     },
     {
-      id: 3,
+      id: 13,
       content: 'Lightweight Raincoat for Boys',
       productsimgs: 'https://cdn.fcglcdn.com/brainbees/images/products/300x364/13347142a.webp',
      date:'₹450',
@@ -30,7 +30,7 @@ const boysRaincoatData = [
       category: 'raincoat'
     },
     {
-      id: 4,
+      id: 14,
       content: 'Fashionable Raincoat for Boys',
       productsimgs: 'https://cdn.fcglcdn.com/brainbees/images/products/300x364/13011038a.webp',
       date:'₹450',

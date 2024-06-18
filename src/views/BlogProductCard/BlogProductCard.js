@@ -1,14 +1,21 @@
 import React from 'react';
-import boysClothesData from './../../data/boys/Cloths';
-import boysRaincoatData from './../../data/boys/RainCoats';
-import boysFootwearData from './../../data/boys/Shoes';
-import boysumbrellaData from './../../data/boys/Umbrella'
-import girlsClothesData from './../../data/girls/Cloths';
-import girlsRaincoatData from './../../data/girls/RainCoats';
-import girlsFootwearData from './../../data/girls/Shoes';
+import { useParams } from 'react-router-dom';
+import boysClothesData from './../data/boys/Cloths';
+import boysRaincoatData from './../data/boys/RainCoats';
+import boysFootwearData from './../data/boys/Shoes';
+import boysUmbrellaData from './../data/boys/Umbrella';
+import girlsClothesData from './../data/girls/Cloths';
+import girlsRaincoatData from './../data/girls/RainCoats';
+import girlsFootwearData from './../data/girls/Shoes';
 import MyProducts from './../../components/ProductCard/ProductCard';
 
-function BlogProductCard({ gender, category }) {
+function BlogProductCard() {
+  const { gender, category } = useParams(); 
+  
+
+  console.log("Gender:", gender);
+  console.log("Category:", category);
+
   let productData = [];
 
   if (gender === 'boys') {
@@ -18,9 +25,8 @@ function BlogProductCard({ gender, category }) {
       productData = boysRaincoatData;
     } else if (category === 'footwear') {
       productData = boysFootwearData;
-    }
-    else if (category === 'umbrella') {
-      productData = boysumbrellaData;
+    } else if (category === 'umbrella') {
+      productData = boysUmbrellaData;
     }
   } else if (gender === 'girls') {
     if (category === 'clothes') {

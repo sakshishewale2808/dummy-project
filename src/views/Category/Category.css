@@ -1,7 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+BR:wght@100..400&family=Shadows+Into+Light&display=swap');
+
+body{ 
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+}
 .category {
   text-align: center;
   padding: 20px;
   height: auto;
+}
+
+.image-container {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; 
+  background-color: #fff;
+}
+
+.image-track {
+  display: inline-flex;
+  animation: scroll 60s linear infinite;
+}
+
+.image-track img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  margin-right: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease;
+}
+
+.image-track img:hover {
+  transform: scale(1.05); 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .categories {
@@ -14,9 +62,7 @@
 .product-img {
   height: 400px;
   width: 300px;
-  border-radius: 10px;
   transition: transform 0.3s ease;
-  padding:10%;
 }
 
 .product-img:hover {

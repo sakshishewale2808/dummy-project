@@ -1,3 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+BR:wght@100..400&family=Shadows+Into+Light&display=swap');
+
+body{ 
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+}
 .container {
   display: flex;
   justify-content: center;
@@ -13,7 +23,7 @@
   height: auto;
   border-radius: 20px;
   padding: 10px;
-  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 
   margin: 10px;
   text-decoration: none;
@@ -22,8 +32,9 @@
   align-items: center;
 }
 .blogcard:hover{
-box-shadow:0 14px 2px pink;
+  box-shadow: inset 0 0 10px 5px #ffb3ff;
 }
+
 
 .productsimgs-container {
   display: flex;
@@ -37,6 +48,7 @@ box-shadow:0 14px 2px pink;
   width: 200px;
   border-radius: 10px;
   transition: transform 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .product-img:hover {
